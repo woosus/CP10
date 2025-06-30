@@ -1,39 +1,63 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 40px;
-  background-color: #ffffff;
-  color: #333333;
-  line-height: 1.6;
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  background: #fff;
+  color: #222;
 }
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
+header {
+  background: linear-gradient(120deg, #2c3e50, #3498db);
+  color: white;
+  padding: 2rem;
+  text-align: center;
 }
-
-.logo {
-  height: 60px;
-  display: block;
-  margin-bottom: 20px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-h1 {
-  font-size: 32px;
-  color: #111111;
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
-
-h2 {
-  font-size: 22px;
-  margin-top: 30px;
-  color: #1f3d7a;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
 }
-
-.subheading {
-  font-style: italic;
-  margin-bottom: 30px;
+.nav-links li a {
+  color: white;
+  text-decoration: none;
 }
-
-ul {
-  padding-left: 20px;
+.hero {
+  padding: 3rem 1rem;
+}
+.cta {
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: #3498db;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1rem;
+  display: inline-block;
+}
+.features, .pricing, .partners {
+  padding: 3rem 1rem;
+}
+.feature-box {
+  margin: 1rem 0;
+}
+.pricing table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.pricing th, .pricing td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: center;
+}
+footer {
+  background: #f0f0f0;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
 }
