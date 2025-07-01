@@ -1,63 +1,101 @@
+
 body {
   margin: 0;
-  font-family: 'Noto Sans KR', sans-serif;
-  background: #fff;
+  font-family: 'Roboto', sans-serif;
+  background: #f8f9fa;
   color: #222;
 }
-header {
-  background: linear-gradient(120deg, #2c3e50, #3498db);
+
+.main-header {
+  background: #000;
   color: white;
-  padding: 2rem;
-  text-align: center;
-}
-nav {
   display: flex;
   justify-content: space-between;
+  padding: 1em 2em;
   align-items: center;
+  font-family: 'Orbitron', sans-serif;
 }
-nav .logo {
-  font-size: 1.5rem;
+
+.main-header .logo {
+  font-size: 1.8em;
   font-weight: bold;
 }
-.nav-links {
+
+.main-header ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.5em;
 }
-.nav-links li a {
+
+.main-header a {
   color: white;
   text-decoration: none;
 }
+
 .hero {
-  padding: 3rem 1rem;
+  background: linear-gradient(to right, #003973, #e5e5be);
+  color: white;
+  text-align: center;
+  padding: 5em 2em;
+  animation: fadeIn 1.5s ease-in-out;
 }
-.cta {
-  padding: 0.5rem 1rem;
-  background: #fff;
-  color: #3498db;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 1rem;
-  display: inline-block;
+
+.hero-text h1 {
+  font-size: 3em;
+  margin: 0.5em 0;
+  font-family: 'Orbitron', sans-serif;
 }
-.features, .pricing, .partners {
-  padding: 3rem 1rem;
+
+.hero-text p {
+  font-size: 1.2em;
 }
+
+.features, .pricing {
+  padding: 4em 2em;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.features h2, .pricing h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2em;
+}
+
 .feature-box {
-  margin: 1rem 0;
+  background: white;
+  border-radius: 12px;
+  padding: 1.5em;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
-.pricing table {
-  width: 100%;
-  border-collapse: collapse;
+
+.feature-box:hover {
+  transform: translateY(-10px);
 }
-.pricing th, .pricing td {
-  border: 1px solid #ccc;
-  padding: 0.5rem;
+
+.pricing ul {
+  list-style: square;
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+
+.footer {
+  background: #222;
+  color: #bbb;
   text-align: center;
+  padding: 2em 1em;
+  font-size: 0.9em;
+  margin-top: 4em;
 }
-footer {
-  background: #f0f0f0;
-  text-align: center;
-  padding: 2rem 1rem;
-  margin-top: 2rem;
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
